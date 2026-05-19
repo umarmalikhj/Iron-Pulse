@@ -6,3 +6,9 @@ function myFunction() {
         x.style.display = "flex";
     }
 }
+
+const findExcuse = document.getElementById("excuse");
+
+findExcuse.addEventListener("click", () => {
+    window.location.href = ("findexcuses.html");
+})
