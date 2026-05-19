@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Excuses!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #212227;
+            --accent-color: #21c1c2;
+            --head-color: #F8F8FF;
+            --text-color: #f5f5dc;
+            --primary-font: "Bebas Neue", sans-serif;
+            --text-font: "Poppins", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: var(--head-color);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            padding: 0 3rem;
+        }
+
+        h1 {
+            font-family: var(--primary-font);
+            text-transform: uppercase;
+            text-align: center;
+            color: var(--head-color);
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+        }
+
+        .video video {
+            width: 100%;
+            height: auto;
+        }
+
+        #join {
+            position: absolute;
+            top: 1.5rem;
+            left: 2.5rem;
+            color: var(--accent-color);
+            font-size: 1.25rem;
+            text-decoration: none;
+            font-family: var(--text-font);
+        }
+
+        #join:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>There Are No Limits, But The Ones You Place On Your Self</h1>
+    <div class="video">
+        <video autoplay>
+            <source src="./Assets/Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <a href="index.html" id="join"><i class="fa-regular fa-circle-left"></i>Join The Grind?</a>
+</body>
+
+</html>
