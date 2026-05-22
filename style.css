@@ -216,17 +216,30 @@ body {
     align-items: center;
 }
 
+#equip1{
+    background-color: #010000;
+    border-radius: 14px;
+}
+
+#equip1 img {
+    height: 235.5px;
+}
+
 /* Individual Styling To Set Heights */
+.equipment{
+    min-height: 75vh;
+}
+
 .choose-us {
-    min-height: 90vh;
+    min-height: 75vh;
 }
 
 .membership-plans {
-    min-height: 60vh;
+    min-height: 45vh;
 }
 
 .testimonials {
-    min-height: 60vh;
+    min-height: 45vh;
 }
 
 /* Card Styling */
