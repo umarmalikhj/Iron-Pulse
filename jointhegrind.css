@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #212227;
+    --accent-color: #21c1c2;
+    --head-color: #F8F8FF;
+    --text-color: #f5f5dc;
+    --primary-font: "Bebas Neue", sans-serif;
+    --text-font: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    animation: fadeIn 0.8s ease;
+    color: var(--head-color);
+    height: 100vh;
+    font-family: var(--text-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.left {
+    width: 60%;
+    height: 100%;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.main h1 {
+    font-family: var(--primary-font);
+    font-size: clamp(3rem, 7vw, 5rem);
+}
+
+.main p {
+    color: var(--accent-color);
+    font-family: var(--primary-font);
+    letter-spacing: 5px;
+    font-size: 0.95em;
+    padding-left: 2px
+}
+
+.main h6 {
+    font-weight: 200;
+}
+
+.secondHead {
+    padding-top: 2rem;
+}
+
+.accHead {
+    color: var(--accent-color);
+}
+
+.sub h1 {
+    font-family: var(--primary-font);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 0.95;
+    letter-spacing: 1px;
+}
+
+.joinForm {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    min-width: 100%;
+    padding: 1em;
+    margin: 0.75em 0 2.5em 0;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    appearance: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    font-family: var(--text-font);
+    color: var(--head-color);
+}
+
+label {
+    color: var(--head-color);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+#submit {
+    background-color: var(--accent-color);
+    width: 100%;
+    border: none;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    font-family: var(--text-font);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 14px;
+    color: var(--head-color);
+    transition: all 0.3s ease;
+
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 12px rgba(33, 193, 194, 0.4);
+}
+
+#submit:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(33, 193, 194, 0.35);
+}
+
+#submit:active {
+    transform: translateY(2px);
+}
+
+#join {
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-family: var(--text-font);
+}
+
+#join:hover {
+    text-decoration: underline;
+}

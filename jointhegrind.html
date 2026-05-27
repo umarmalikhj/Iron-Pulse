@@ -12,120 +12,62 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #212227;
-            --accent-color: #21c1c2;
-            --head-color: #F8F8FF;
-            --text-color: #f5f5dc;
-            --primary-font: "Bebas Neue", sans-serif;
-            --text-font: "Poppins", sans-serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--primary-color);
-            animation: fadeIn 0.8s ease;
-            color: var(--head-color);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: var(--text-font);
-        }
-
-        .joinForm {
-            display: flex;
-            flex-direction: column;
-            max-width: 500px;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 24px;
-            padding: 2.5rem;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-        }
-
-        input,
-        select {
-            width: 25rem;
-            padding: 1em;
-            margin: 0.4em 0 1em 0;
-            border-radius: 14px;
-            transition: all 0.3s ease;
-        }
-
-        label {
-            color: var(--accent-color);
-        }
-
-        #submit {
-            background-color: var(--accent-color);
-            width: 100%;
-            border: none;
-            padding: 1rem 0;
-            margin: 1rem 0;
-            font-family: var(--text-font);
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 14px;
-            color: var(--head-color);
-            transition: all 0.3s ease;
-
-        }
-
-        input:focus,
-        select:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            box-shadow: 0 0 12px rgba(33, 193, 194, 0.4);
-        }
-
-        #submit:hover {
-            cursor: pointer;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 24px rgba(33, 193, 194, 0.35);
-        }
-
-        #submit:active{
-            transform: translateY(2px);
-        }
-    </style>
+    <link rel="stylesheet" href="jointhegrind.css">
     <title>Join The Grind</title>
 </head>
 
 <body>
-    <div class="joinForm">
-        <form action="#">
-            <div class="name">
-                <label for="name">Name</label>
-                <br>
-                <input type="text" id="name" name="Name" placeholder="Enter Name">
+    <div class="container">
+        <div class="left">
+            <div class="main">
+                <p>Discipline Starts Here</p>
+                <h1>Enter <span class="accHead">IronPulse</span></h1>
+                <h6>Results begin where excuses end.</h6>
             </div>
-            <div class="email">
-                <label for="email">Email</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="Enter Email">
+            <div class="sub">
+                <h1>Your Body <br>Can <span class="accHead">Handle</span> It.</h1>
+                <h1 class="secondHead">Your Mind <br> Needs<span class="accHead"> Convincing</span>.</h1>
             </div>
-            <div class="membership">
-                <label for="membership">Membership Type</label>
-                <br>
-                <select name="membership" id="membership">
-                    <option disabled selected>Select Type</option>
-                    <option value="starters">Starters</option>
-                    <option value="pro">Pro</option>
-                    <option value="elite">Elite</option>
-                </select>
-            </div>
-            <button type="submit" id="submit">Start Your Grind</button>
-        </form>
+        </div>
+        <div class="joinForm">
+            <form action="#">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" name="Name" placeholder="What Should We Call You?" >
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Where Do We Reach You?" >
+                </div>
+                <div class="goal">
+                    <label for="goal">What Are You Chasing?</label>
+                    <br>
+                    <select name="goal" id="goal" >
+                        <option disabled selected>Select Your Goal</option>
+                        <option value="strength">Strength</option>
+                        <option value="fatLoss">Fat Loss</option>
+                        <option value="discipline">Discipline</option>
+                        <option value="aesthetic">Aesthetic Physique</option>
+                        <option value="athlete">Athlete Training</option>
+                    </select>
+                </div>
+                <div class="membership">
+                    <label for="membership">How Serious Are You?</label>
+                    <br>
+                    <select name="membership" id="membership" >
+                        <option disabled selected>Select Commitment Level</option>
+                        <option value="starters">Starters</option>
+                        <option value="pro">Pro</option>
+                        <option value="elite">Elite</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit">Begin Transformation</button>
+            </form>
+        </div>
     </div>
+    <a href="index.html" id="join"><i class="fa-regular fa-circle-left"></i>Back To Excuses?</a>
 </body>
 
 </html>
