@@ -20,7 +20,7 @@ html {
 body {
     background-color: var(--primary-color);
     color: var(--text-color);
-    margin-top: 100px;
+    margin-top: 93px;
 }
 
 /* 
@@ -42,7 +42,6 @@ body {
     background: rgba(33, 34, 39, 0.75);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding: 1rem 3rem;
 }
@@ -125,7 +124,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 93px);
     gap: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -353,10 +352,8 @@ footer a {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
-
         background-color: var(--primary-color);
         padding: 1.5rem 0;
-
         z-index: 999;
     }
 
