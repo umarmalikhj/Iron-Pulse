@@ -5,6 +5,7 @@
     --text-color: #f5f5dc;
     --primary-font: "Bebas Neue", sans-serif;
     --text-font: "Poppins", sans-serif;
+    --footer-background: #14151a;
 }
 
 * {
@@ -15,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding: 100px;
 }
 
 body {
@@ -309,7 +311,7 @@ body {
 }
 
 footer {
-    background-color: black;
+    background-color: var(--footer-background);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,17 +320,64 @@ footer {
     padding: 3em 0;
 }
 
-footer h3 {
-    font-size: 1.85rem;
+footer h2 {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
 }
 
 footer p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    opacity: 0.5;
 }
 
-footer a {
-    text-decoration: none;
+.iconPack {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.iconPack i {
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.iconPack i:hover{
+    color: var(--accent-color);
+    transform: translateY(-4px);
+}
+
+.actionLinks {
+    display: flex;
+    gap: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.actionLinks a {
     color: var(--text-color);
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 0.75rem;
+    opacity: 0.7;
+
+}
+
+.actionLinks a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.4s ease;
+}
+
+.actionLinks a:hover::after,
+.actionLinks a.active::after {
+    width: 100%;
 }
 
 /* Responsiveness */
