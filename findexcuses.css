@@ -20,10 +20,11 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     justify-content: center;
     align-items: center;
-    padding: 0 3rem;
+    text-align: center;
+    font-family: var(--text-font);
+    color: var(--head-color);
 }
 
 @keyframes fadeIn {
@@ -38,33 +39,44 @@ body {
     }
 }
 
-h1 {
-    font-family: var(--primary-font);
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--head-color);
+.txt-blue {
+    color: var(--accent-color);
 }
 
-.video {
+.exhead h1 {
+    font-family: var(--primary-font);
+    font-size: 5rem;
+}
+
+.exhead h5 {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: var(--accent-color);
+}
+
+.exhead p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.excard {
+    display: flex;
+    flex-direction: column;
+}
+
+.excuses {
+    background-color: gray;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 5rem;
 }
 
-.video video {
-    width: 90%;
-    height: auto;
+.card {
+    background-color: #21c1c2;
+    width: 15rem;
+    padding: 1rem 0;
 }
 
-#join {
-    position: absolute;
-    top: 1.5rem;
-    left: 2.5rem;
-    color: var(--accent-color);
-    font-size: 1.25rem;
-    text-decoration: none;
-    font-family: var(--text-font);
-}
-
-#join:hover {
-    text-decoration: underline;
-}
