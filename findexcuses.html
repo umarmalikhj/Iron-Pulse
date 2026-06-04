@@ -24,32 +24,25 @@
     <main class="excard">
         <h2>What's Stopping You Today? </h2>
         <div class="excuses">
-            <div class="card">
-                <p>I'm Too Tired</p>
-            </div>
-            <div class="card">
-                <p>I'll Start Tommorow</p>
-            </div>
-            <div class="card">
-                <p>No Time</p>
-            </div>
-            <div class="card">
-                <p>Not Motivated</p>
-            </div>
-            <div class="card">
-                <p>Gym Is Too Far!</p>
-            </div>
-            <div class="card">
-                <p>It's Raining.</p>
-            </div>
+            <button class="card">I'm Too Tired</button>
+            <button class="card">I'll Start Tommorow</button>
+            <button class="card">No Time</button>
+            <button class="card">Not Motivated</button>
+            <button class="card">Gym Is Too Far!</button>
+            <button class="card">It's Raining.</button>
         </div>
         <div class="exresult">
             <h3>Analysis Complete</h3>
             <p id="reason">Select an excuse above.</p>
         </div>
+        <div class="counter">
+            Excuses Remaining: <span id="reasonCounter">3</span>
+        </div>
     </main>
 
-    <!-- <a href="index.html" id="join"><i class="fa-regular fa-circle-left"></i>Return To The Grind</a> -->
+    <a href="index.html" id="join"><i class="fa-regular fa-circle-left"></i>Return To The Grind</a>
+
+    <script src="findexcuses.js"></script>
 </body>
 
 </html>
