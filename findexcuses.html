@@ -15,33 +15,42 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
-    <header class="exhead">
-        <h5>IronPulse Excuse Center</h5>
-        <h1>Looking For <span class="txt-blue">Excuses?</span></h1>
-         <p>Let's see if your's is any different </p>
-    </header>
-    <main class="excard">
-        <h2>What's Stopping You Today? </h2>
-        <div class="excuses">
-            <button class="card">I'm Too Tired</button>
-            <button class="card">I'll Start Tommorow</button>
-            <button class="card">No Time</button>
-            <button class="card">Not Motivated</button>
-            <button class="card">Gym Is Too Far!</button>
-            <button class="card">It's Raining.</button>
-        </div>
-        <div class="exresult">
-            <h3>Analysis Complete</h3>
-            <p id="reason">Select an excuse above.</p>
-        </div>
-        <div class="counter">
-            Excuses Remaining: <span id="reasonCounter">3</span>
-        </div>
-    </main>
+    <div class="container">
+        <header class="exhead">
+            <h5>IronPulse Excuse Center</h5>
+            <h1>Looking For <span class="txt-blue">Excuses</span>?</h1>
+            <p>Let's see if your's is any different </p>
+        </header>
+        <main class="excard">
+            <h2>What's Stopping You Today? </h2>
+            <div class="counter">
+                Excuses Remaining: <span id="reasonCounter">3</span>
+            </div>
+            <div class="excuses">
+                <button class="card">I'm Too Tired</button>
+                <button class="card">I'll Start Tommorow</button>
+                <button class="card">No Time</button>
+                <button class="card">Not Motivated</button>
+                <button class="card">Gym Is Too Far!</button>
+                <button class="card">It's Raining.</button>
+            </div>
+            <div class="exresult">
+                <h3>Analysis Complete</h3>
+                <p id="reason">Select an excuse above.</p>
+            </div>
+        </main>
+        <a href="index.html" id="join"><i class="fa-regular fa-circle-left"></i>Return To The Grind</a>
+    </div>
 
-    <a href="index.html" id="join"><i class="fa-regular fa-circle-left"></i>Return To The Grind</a>
+    <div class="exTransition">
+        <h1>We Analysed Your <span class="txt-blue">Pattern</span>!</h1>
+        <h1>And Found the <span class="txt-blue">Best Excuse</span> There Is!</h1>
+        <h1>Turns Out <span class="txt-blue">The Excuse</span> Was Never <span class="txt-blue">The Problem</span>.</h1>
+    </div>
 
+    
     <script src="findexcuses.js"></script>
 </body>
 
