@@ -45,7 +45,7 @@ body {
 
 .exhead h1 {
     font-family: var(--primary-font);
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .exhead h5 {
@@ -63,20 +63,107 @@ body {
 .excard {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow:
+        0 8px 32px rgba(0,0,0,.35);
+    padding: 2rem;
+    border-radius: 14px;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.excard h2 {
+    font-family: var(--primary-font);
+    font-size: 1.75rem;
 }
 
 .excuses {
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    margin: 0 5rem;
 }
 
 .card {
     background-color: #21c1c2;
-    width: 15rem;
-    padding: 1rem 0;
+    min-height: 75px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.08);
+    background:
+        rgba(255,255,255,.04);
+    color: var(--head-color);
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.excuses button:hover{
+    background:
+        rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.05);
+    transform: translateY(-2px);
+}
+
+.excuses button:active {
+    transform: translateY(4px);
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.exresult {
+    border: 1px solid rgba(255,255,255,.08);
+    background:
+        rgba(255,255,255,.04);
+    border-radius: 14px;
+    padding: 2rem;
+    text-align: start;
+}
+
+.exresult h3 {
+    font-family: var(--primary-font);
+    letter-spacing: 4px;
+    color: var(--accent-color);
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.exresult p {
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.fade-in {
+    animation: roastAppear 0.5s ease;
+}
+
+@keyframes roastAppear {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#join {
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-family: var(--text-font);
+}
+
+#join:hover {
+    text-decoration: underline;
 }
 
