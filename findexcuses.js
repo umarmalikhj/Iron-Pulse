@@ -1,5 +1,7 @@
 const buttons = document.querySelectorAll(".card");
 const reasonText = document.getElementById("reason");
+const reasonCounter = document.getElementById("reasonCounter");
+let counter = 3;
 const roasts = [
     // 1
     "Too tired? Funny. Your phone's is at 2% & somehow it's still working harder than you.",
@@ -21,5 +23,10 @@ for (let i = 0; i < buttons.length; i++) {
         void reasonText.offsetWidth;
         reasonText.textContent = roasts[i];
         reasonText.classList.add("fade-in");
+        counter--;
+        reasonCounter.textContent = counter;
+        if (counter === 0){
+            
+        }
     })
 }
