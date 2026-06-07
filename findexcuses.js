@@ -2,6 +2,13 @@ const buttons = document.querySelectorAll(".card");
 const reasonText = document.getElementById("reason");
 const reasonCounter = document.getElementById("reasonCounter");
 let counter = 3;
+const container = document.querySelector(".container");
+const transition = document.querySelector(".exTransition");
+const head1 = document.getElementById("head1");
+const head2 = document.getElementById("head2");
+const head3 = document.getElementById("head3");
+const rickroll = document.querySelector(".rickroll");
+const video = document.getElementById("rickVideo");
 const roasts = [
     // 1
     "Too tired? Funny. Your phone's is at 2% & somehow it's still working harder than you.",
@@ -26,7 +33,25 @@ for (let i = 0; i < buttons.length; i++) {
         counter--;
         reasonCounter.textContent = counter;
         if (counter === 0){
-            
+            container.classList.add("hide");
+            transition.classList.add("show")
+
+            head1.classList.add("reveal");
+
+            setTimeout(() => {
+                head1.classList.remove("reveal");
+                head2.classList.add("reveal");
+            }, 1500);
+
+            setTimeout(() => {
+                head2.classList.remove("reveal");
+                head3.classList.add("reveal");
+            }, 3000);
+            setTimeout(() => {
+                head3.classList.remove("reveal");
+                rickroll.classList.add("show");
+                video.play();
+            }, 4500);
         }
     })
-}
+};
