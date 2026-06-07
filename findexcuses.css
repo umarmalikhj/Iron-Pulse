@@ -259,18 +259,20 @@ RickRoll Styling
 */
 
 .rickroll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
     min-height: 100vh;
     opacity: 0;
     pointer-events: none;
-    animation: fadeIn 0.8s ease;
 }
 
 .rickroll.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     opacity: 1;
     pointer-events: all;
+    animation: fadeIn 0.8s ease;
 }
 
 .videocard {
@@ -309,3 +311,25 @@ RickRoll Styling
 .videocard p {
     font-family: var(--text-font);
 }
+
+#getback {
+    text-decoration: none;
+    color: var(--head-color);
+    padding: 1rem 1.6rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+#getback:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.09);
+
+    border-color: rgba(33, 193, 194, 0.4);
+}
+
