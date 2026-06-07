@@ -9,6 +9,7 @@ const head2 = document.getElementById("head2");
 const head3 = document.getElementById("head3");
 const rickroll = document.querySelector(".rickroll");
 const video = document.getElementById("rickVideo");
+const getback = document.getElementById("getback");
 const roasts = [
     // 1
     "Too tired? Funny. Your phone's is at 2% & somehow it's still working harder than you.",
@@ -55,3 +56,7 @@ for (let i = 0; i < buttons.length; i++) {
         }
     })
 };
+
+getback.addEventListener("click", () => {
+    window.location.href = "index.html";
+})
